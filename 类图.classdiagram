@@ -1,0 +1,751 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="5cbd8688-ccee-4675-acbb-06a8600e3b85" name="类图" linkedPackageId="507e99fd-101c-416f-bd2f-96aa3126fe39" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="a5315bba-63c2-45a2-ba23-0c50a5f30a4d" name="CGameCtrl" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3a5a7bf9-3a1f-492b-88c4-ffb8e5fdb6f9" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cc941bd6-4a12-4e18-90ec-2185d94d464f" name="CChessCtrl" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="94bb59e5-6765-4558-a9d1-5a1e962b6598" />
+        <suppliersInternal>
+          <interfaceRealization Id="4bff83a6-1024-4482-bfdb-8fbf3c8ea0e4">
+            <interfaceMoniker Id="a5315bba-63c2-45a2-ba23-0c50a5f30a4d" LastKnownName="CGameCtrl" />
+            <elementDefinition Id="aaf1f3bf-646e-4aa3-abb4-e98a7ccd0132" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="b5399804-ddd0-4edb-8c07-246f67f7e4d8" isDerived="false" sourceEndRoleName="CChessCtrl" targetEndRoleName="CAI//artificial intelligence" isLeaf="false" isAbstract="false">
+            <classMoniker Id="42090772-51f3-41a9-bf16-668d565b1fa3" LastKnownName="CAI这个类中的内容有待研究，暂时给出这么几个" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a2d093ba-6b00-4d82-926b-e73c50d5cb71" name="CChessCtrl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fd68e130-916b-498e-a40e-a7b0f7e2f44f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1b25cd17-82a4-4ba3-9bb6-a602b6348e72" name="CAI//artificial intelligence" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cef0c9cf-67c5-48a3-a851-4396c22d2f07" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e76ad1d6-757b-4e67-a2de-25aefcf34ff9" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="9e33892a-4fae-4f06-b1cc-cac7c3400327" name="list&lt;CPlayerChess*&gt; playchess" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e96e813f-3a76-412e-a109-cb686dda3633" />
+          </property>
+          <property Id="82270e61-987f-4269-865c-d19c96f6677d" name="list&lt;CComputerChess*&gt; comchess" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3622bac4-6805-40b3-91e7-a5e1d047fbc4" />
+          </property>
+          <property Id="eab67a24-2f0f-4331-a013-c0321adc1d27" name="CSquare square" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f39f67cb-04bd-4bde-bc6b-a9fff1fb2f2a" />
+          </property>
+          <property Id="5cd07fcf-4d3d-462e-96e2-323783dd64af" name="CBackArray backarray" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7ae848ee-bd20-44e9-87d2-97e2e2daa26d" />
+          </property>
+          <property Id="ccf08708-5ac7-4aab-9129-691bb5224ef8" name="CBack back" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d966954d-14f1-4f00-8275-35e1f659bdd4" />
+          </property>
+          <property Id="e2ebe91d-0958-484e-9c36-b7a74db8221c" name="bool playerORcomuter" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f908e789-e099-4785-944a-b9d36f3d3946" />
+          </property>
+          <property Id="e9ea1a40-551b-4ba4-be0c-7702ed54f2d1" name="CAI* ArtificialIntelligence" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5f9ebdc5-d589-467f-88a6-cf8495d59f81" />
+          </property>
+          <property Id="6edfbe39-66d8-41eb-adbc-2d31b5e19062" name="int CountComputer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8c1541e4-acd0-4aca-a540-62fa221c4424" />
+          </property>
+          <property Id="85f56607-8235-473f-ab13-6d6d7a84bbfb" name="int CountPlayer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e912540f-5de5-401b-a518-2528bcc94225" />
+          </property>
+          <property Id="29747a21-ee5e-4624-8643-b765c9482bc6" name="bool GameStart" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5d7928e2-69e7-481b-8e16-36abf40bdc98" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="62cf9c2e-9c19-4e94-8dad-4cebb16b1647" name="virtual void OnCreateGame" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="26d2c99c-ae7a-4b57-9d01-6c353abeedc7" />
+          </operation>
+          <operation Id="eab499f1-7b3a-44eb-88f9-60d776d506ab" name="virtual void OnDrawGame" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b5fa9126-11cf-48b6-88ee-e3de32d9d67d" />
+          </operation>
+          <operation Id="e093bc51-2bc3-4276-9053-61fc30262bba" name="virtual void OnRunGame" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2dcf5474-4869-415f-92a8-15a5a30fec09" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="efb4cacc-00ef-43d2-a340-b726ca5050bd" name="WPARAM TimerID" direction="In" isUnique="false">
+                  <elementDefinition Id="42948846-8b7d-4b5b-8f64-45152d9c5077" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="77853a68-c0e9-4162-8dd7-21b68ef7242f" name="virtual void OnLBottonDown" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cf887380-d52e-4349-b751-7930a8bcc7c0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="15332a3b-92cb-4bc3-b652-86199f884dce" name="POINT" direction="In" isUnique="false">
+                  <elementDefinition Id="0510ab4d-18f5-4595-b860-b9267e7f28bc" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b5f2cf15-6242-42d3-9811-9159bfc9858b" name="virtual void MouseMove" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fbb57ccc-b7eb-41eb-8906-0578d190a8cf" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="dc43aba2-a596-4623-bd53-5f9e2622c94d" name="POINT" direction="In" isUnique="false">
+                  <elementDefinition Id="0ab3d329-b77c-4f5e-bd6f-c9773feee37f" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="63d00028-912b-4370-8539-a6f932d574dc" name="void ShowPlayerChess" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fcd9edb4-d34a-4eba-a737-6d2435a06cd9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5473a812-ff4b-4852-aee1-5432674cedbc" name="HDC" direction="In" isUnique="false">
+                  <elementDefinition Id="6a279f28-c05a-4e2b-8f24-36d0d07dd743" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d69b3557-575a-49af-8695-491260af8d7a" name="void CreatePlayer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="24f2e018-eefa-4493-b199-71ab29cf9489" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="bc8fae51-77ec-4871-ba19-51c928a2b517" name="POINT" direction="In" isUnique="false">
+                  <elementDefinition Id="7b483576-7683-4b45-ace0-ee99668da516" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="0694d1ff-1f50-441a-9484-39eabbacd53d" name="void CreateComputer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ed23f477-625b-4988-9f4c-594f903a3c70" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="503ee83d-74a2-43fa-97fc-afb0eebfefdc" name="POINT" direction="In" isUnique="false">
+                  <elementDefinition Id="7683804e-cd24-4fb6-a754-59e772e0e1fc" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="175fe9cb-d733-4137-9fe1-99171e1fa741" name="virtual void UndoOnce" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1c0b3cf8-455e-4c47-8956-70392168dd9d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f715a6d1-b857-4c12-99cc-3779111eb1dd" name="//悔棋" direction="In" isUnique="false">
+                  <elementDefinition Id="822c71e5-83f4-4045-8730-c555bc86820b" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="6443fc1f-d19d-4b40-a843-054463fd0602" name="static int Round_off" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="101b5257-514c-4f11-bb93-b77ccb42705a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="51a98e38-8b18-450b-aa82-ce1d98860560" name="double a)//四舍五入(" direction="In" isUnique="false">
+                  <elementDefinition Id="fafc47f8-0cc9-47fb-9efd-19f00886e6db" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d6ec9035-5125-498e-854c-22e1e9faf855" name="POINT GetNearest" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c4c846ab-793e-4dc2-bad1-e00151c0403e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1b123e97-c53a-4e57-9380-446b8ca4297e" name="POINT point)获取下棋点(" direction="In" isUnique="false">
+                  <elementDefinition Id="5a4a80f0-2f95-462c-99ab-5f03caeafe16" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="fd2cc57d-be30-458c-89d3-47f65db8a2ab" name="virtual SetPlayerFirst" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4cce1662-7c9e-4a0e-a96d-477c80a2c2b7" />
+          </operation>
+          <operation Id="d03f306e-8439-4180-bf98-4b406910ab85" name="virtual SetComputerFirst" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3038f7bf-c427-4208-82b9-81ad39fbab63" />
+          </operation>
+          <operation Id="263a966b-9c2f-4477-90db-30d5864e66ed" name="virtual void GiveUp" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8872c47e-8fc9-41bb-b922-1c48aca75a14" />
+          </operation>
+          <operation Id="c12550cd-1960-443d-b9a9-7bd04fb0d7ac" name="void ShowComputerChess" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="66693777-b31a-40b6-88b5-3a319ad4d0ba" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="53e46d07-a660-4f85-a1de-62b0a4f22a4f" name="HDC" direction="In" isUnique="false">
+                  <elementDefinition Id="0f5c77d1-1d6d-44bd-bf87-f4dccbe206c6" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="1769fd7f-4cb4-477e-97d4-13b9067cb709" name="bool IsTieGame" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0572d439-e62c-4dde-99a8-b03f0f052062" />
+          </operation>
+          <operation Id="5fb37faf-5332-4196-a856-cbfb3566d2e8" name="bool WhoWinGame" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b6577bd9-1e6e-42f8-82a1-ed5b6a359d17" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="62e50067-6317-428f-bfe4-52f8187e14de" name="CPlayerChess" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="82a33036-9c25-4ee2-bc98-47077a7cb658" />
+        <targetEnds>
+          <association Id="890fcafc-c2b5-45a1-9c13-816e3486313c" isDerived="false" sourceEndRoleName="CPlayerChess" targetEndRoleName="CChessCtrl" isLeaf="false" isAbstract="false">
+            <classMoniker Id="cc941bd6-4a12-4e18-90ec-2185d94d464f" LastKnownName="CChessCtrl" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0b862e7f-3fe7-487c-b8c6-45c04d1b6420" name="CPlayerChess" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9b32d2fd-6899-49a7-962a-ae95d47a2795" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="53f49869-1171-4f3f-8534-894187dd3f7c" name="CChessCtrl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9fca8c36-b4d9-4460-bc5d-6cd11f7beba3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="baef0908-566f-484f-9ebc-a9d45e6ff505" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="d1b5c506-2c1d-476c-82d1-73c4d15f08a0" name="HBITMAP WhiteChess" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="81ebd0d9-4d89-45ba-ab0e-573541391b7f" />
+          </property>
+          <property Id="75a347e1-509b-4f7b-bbaa-c2be58afcef9" name="POINT point" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0fb6ef79-95f1-47af-bc40-3da9fca5f0ba" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="6a10b025-89b6-4295-a80b-6aff0b177927" name="void Show" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5e4752a9-9b27-45d7-9dc1-de7575bc5449" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e37d9c16-65b5-4e81-8ad4-c3e954a67fd1" name="HDC" direction="In" isUnique="false">
+                  <elementDefinition Id="5b1ed5cd-1d8a-455c-81c6-30e49ad0f287" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="575e796c-3113-4b5a-a614-0334e4f79733" name="void InitPlayer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a2bfb218-fa5c-41d9-839e-5cf1eadb5b24" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2963ac0d-ca67-4f6c-9897-ad225f737b7a" name="HINSTANCE" direction="In" isUnique="false">
+                  <elementDefinition Id="4949d929-d83f-4c28-b1d8-caafb807ca11" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="75168ddb-a9db-4d61-93ed-ff1cb76d62fe" name="CComputerChess" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="301857f9-a729-4d56-9bdd-4d2dd061a3f1" />
+        <targetEnds>
+          <association Id="6fd02995-97eb-4648-a2ae-862764146148" isDerived="false" sourceEndRoleName="CComputerChess" targetEndRoleName="CChessCtrl" isLeaf="false" isAbstract="false">
+            <classMoniker Id="cc941bd6-4a12-4e18-90ec-2185d94d464f" LastKnownName="CChessCtrl" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3626e06e-2693-458b-8794-762fda068776" name="CComputerChess" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c127d2b7-5110-4706-a9d0-2aed6e480b0e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="12def79d-4c64-49c4-ab94-8802ff6935b5" name="CChessCtrl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="79a16481-fd8c-4e10-8512-230068d0d80e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7f0fcb0b-9c4d-4dd1-8b72-f7419d189458" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="d415fab6-ab28-449e-9eb9-149b95584c09" name="HBITMAP BlackChess" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="83fa22ae-3e66-4117-9ea4-59e62390abee" />
+          </property>
+          <property Id="fa86d004-bdef-4421-95fb-a47c69b16f93" name="POINT point" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b81d45f6-7ba9-4b72-b50c-6e3db105c6e6" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="1721bf5c-c638-4578-a622-ccce86b469b8" name="void Show" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c735bc57-ab4f-473f-b349-219c72155921" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0435ea66-62bf-4f53-9e4c-f42e18aabdd9" name="HDC" direction="In" isUnique="false">
+                  <elementDefinition Id="f7aab085-e84b-40cb-9f21-eb3f326646ff" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="f287d9c8-8fa8-4b5d-8fdb-17c7e1590271" name="void InitComputer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="963376bf-3071-41de-9498-4b7a3ce05ad7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1a839ecc-5e3c-4108-af36-65fb34c9c33e" name="HINSTANCE" direction="In" isUnique="false">
+                  <elementDefinition Id="e3af6a64-0869-4cf9-8584-75ff70f54351" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e258e365-8d64-48c5-acc8-fcfa31e5d6b7" name="CBack" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="89d68158-063d-4c10-9b9e-81beae86f748" />
+        <targetEnds>
+          <association Id="9ebeb418-7bf6-4515-b365-c7b7ce5c8836" isDerived="false" sourceEndRoleName="CBack" targetEndRoleName="CChessCtrl" isLeaf="false" isAbstract="false">
+            <classMoniker Id="cc941bd6-4a12-4e18-90ec-2185d94d464f" LastKnownName="CChessCtrl" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="998a27c9-e6bc-46cd-82cd-a83c2770403a" name="CBack" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b2669c2b-6d14-4767-b2bf-b86b6e22d901" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="65599cd9-5b0c-45df-96d6-369bf40640f3" name="CChessCtrl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="b80a7782-79cd-4879-ae19-e8e6f74e310a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5850ff5a-1e41-434b-b8df-70aae37c02f5" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="62986205-e2e1-4744-80f5-d2319c327f4e" name="HBITMAP ChessBoard" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ff256391-ee7c-4663-b230-5489ee15ee00" />
+          </property>
+          <property Id="a0566bbd-9936-4e1d-9c62-0cbaf591b8a0" name="POINT point" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="570ff97f-9437-4625-8d40-5ef06622869b" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="c22aef37-68fe-4273-9d77-d79a3fac74e9" name="void Show" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a0ad6f5d-bab6-4b85-9c38-f8833e8b55fd" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2e3e1e51-2580-4d40-8254-ebdbfe2383b8" name="HDC hdc" direction="In" isUnique="false">
+                  <elementDefinition Id="ffdb1b74-62b0-4fb1-abc1-af678cf712d6" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="20a48d76-d23b-4d25-bb03-647ab9c06000" name="void InitBack" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="490f5e9a-a0f2-46fd-b1f2-7c1aa0a1217e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="142fc9e2-51ac-471d-8ae1-b0f7177a7d41" name="HINSTANCE" direction="In" isUnique="false">
+                  <elementDefinition Id="e795cd7d-5266-4096-af40-6b5fa4a0e7ec" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0c3334da-a17f-4242-83d9-356ccc3bb0a1" name="CUndo //本来想用栈实现" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a693e411-bd95-488f-a213-dc03e0c8fd99" />
+        <ownedAttributesInternal>
+          <property Id="e7c74118-5e77-4d11-a5c2-c46eed502a00" name="后来发现直接在ChessCtrl中就可以实现" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bd3dde7d-08e6-4fc6-b322-90e7c04e6a93" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="ae5278d4-339d-4f27-ad43-9c8629added3" name="void PushStack" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1e03a185-3c3f-434f-ab2b-2ea83dcdd04f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ec96b869-b888-4423-adca-70921b46d74f" name="CBackArray" direction="In" isUnique="false">
+                  <elementDefinition Id="6f41a1ba-1fc7-4dad-b74a-8fbe183392b4" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="f7786471-2e5b-4684-9bb5-fa31144581ce" name="void PopStack" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1d35cf43-5409-43b0-87fc-f2cad478c820" />
+          </operation>
+          <operation Id="b70cfb3d-1986-4df1-b158-9be0dc9a30aa" name="CBackArray GetTop" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5a1b50ed-d3f9-4346-ba72-fe161f20e229" />
+          </operation>
+          <operation Id="6840c064-d8d0-49cf-9ea7-89b31156a5a5" name="void Init" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ff4c26d8-fbf8-493f-8987-b7e9c71191d9" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="aa34e4ec-c754-48a3-94ca-3086f3fa43a6" name="CSquare//预放的位置" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ca148ddc-0007-4325-8664-7cf1af0d5b84" />
+        <targetEnds>
+          <association Id="780d94ac-aaeb-45ca-a7e2-d9f7a2fc052f" isDerived="false" sourceEndRoleName="CSquare//预放的位置" targetEndRoleName="CChessCtrl" isLeaf="false" isAbstract="false">
+            <classMoniker Id="cc941bd6-4a12-4e18-90ec-2185d94d464f" LastKnownName="CChessCtrl" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b226b76f-0be2-4dc8-96dc-ce3ef3d4e654" name="CSquare//预放的位置" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8927823a-f2ef-4487-9cd6-d97e7bad4ace" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ea2a8895-6a81-4bc7-9291-5ff4ec49291a" name="CChessCtrl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="808413c0-794e-473c-ab2b-808e4c8db49c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0c684e5a-aa2d-4dff-b683-fa28a68bcedd" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="536ecbd2-3f2d-4809-8120-6ed86b149839" name="HBITMAP Black" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8d385f68-2ca1-44b9-9cc3-200f9899a9a9" />
+          </property>
+          <property Id="277082d2-da84-4f5f-911a-d48c2e5db721" name="HBITMAP White" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="412c16a0-3280-4e67-93db-4aaebf8507b7" />
+          </property>
+          <property Id="de20ee2d-49b0-4b9e-8ba2-26d235408c0f" name="POINT point" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="da7c0cbe-62f2-418d-8e0b-4d2ca8db924a" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="eba23ead-cc50-4e4b-915c-27ef39b63d7b" name="void Show" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1c93dfb6-daaa-4620-ae00-eb96634b4a5e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f191b301-ad22-4fb2-b631-932d410a31b8" name="HDC" direction="In" isUnique="false">
+                  <elementDefinition Id="22c3d29b-2c35-4aac-a197-532d9d651b92" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="62a65f87-ca64-4019-ad42-a479365846e3" name="void InitSquare" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="894dfd22-2973-4d63-a4a7-35765969262f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="37a8ac07-b205-459c-ad31-03f55ad92536" name="HINSTANCE hIns" direction="In" isUnique="false">
+                  <elementDefinition Id="7d802ee2-252b-4d40-86b5-c0287c7be9d0" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7e6dd41f-a338-48e4-8167-b167ed69ea09" name="CBackArray" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="17d73d9f-f100-4c68-938f-8fa8057b5396" />
+        <targetEnds>
+          <association Id="a0da1373-aa3e-442f-a939-0957f84be61c" isDerived="false" sourceEndRoleName="CBackArray" targetEndRoleName="CUndo/悔棋(栈)" isLeaf="false" isAbstract="false">
+            <classMoniker Id="0c3334da-a17f-4242-83d9-356ccc3bb0a1" LastKnownName="CUndo //本来想用栈实现" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="42821864-c307-45b0-aef7-e8f14ca78bac" name="CBackArray" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="67b50107-75ce-44a4-b072-6709c9a31718" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="316366a2-85bf-4c54-ac4b-bfe2db091698" name="CUndo/悔棋(栈)" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c9b9583d-7ba1-4c0c-8bab-52d10f07db11" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="145dbe11-59dc-4431-a896-3e9efa195876" />
+          </association>
+          <association Id="dc5be439-662d-45d9-ab9c-07c6bac0e7ea" isDerived="false" sourceEndRoleName="CBackArray" targetEndRoleName="CChessCtrl" isLeaf="false" isAbstract="false">
+            <classMoniker Id="cc941bd6-4a12-4e18-90ec-2185d94d464f" LastKnownName="CChessCtrl" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9137f680-a2c6-463c-ab7f-fa3f86613df6" name="CBackArray" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9694c94c-a8d6-4a98-a510-8a277a9583f5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b01dbb48-b28e-4844-acd5-e5bd48dab7f1" name="CChessCtrl" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="2a9b34a9-6d3c-4f3e-b1bd-5b9e373db326" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f920b61b-dd42-47ca-8c9f-d8f418060c4a" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="f763a8b0-5ab5-4830-8756-6090517ad623" name="int ChessBoard[15]" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <lowerValueInternal>
+              <literalString Id="aa2f34aa-80e1-4e81-bfab-d15babd52ca8" name="Lower" value="15">
+                <elementDefinition Id="37550a68-bac8-48a6-9813-c8db2c864771" />
+              </literalString>
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString Id="aab356b5-e291-4656-bc81-58c0201dc133" name="Upper" value="15">
+                <elementDefinition Id="74ef2dc0-3829-4ee7-ad92-0ea4455a7b2d" />
+              </literalString>
+            </upperValueInternal>
+            <elementDefinition Id="eca0fdb4-ddc2-44f1-8bf3-9bd14ff7daa2" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="50e18596-639b-4c43-9b0d-2ab253c62c4c" name="void Updata" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d28e2011-1cdf-4409-8df1-6b7043574d29" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3f8e519b-7011-4d28-8bce-26ae29783feb" name="list&lt;CPlayerChess*&gt;" direction="In" isUnique="false">
+                  <elementDefinition Id="12fff2fd-6444-4955-a375-d3765967e01e" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="bd9ab17a-bb5c-42ea-82a5-5e3603d32ae9" name="list&lt;CComputerChess*&gt;" direction="In" isUnique="false">
+                  <elementDefinition Id="6c5beebf-f3c9-4e9f-936c-8439f7c82b15" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="04791b9b-a2b3-4480-b1ec-c49118b6434b" name="上面这个函数基本没用上" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4be11862-a6f5-4238-8e77-31cbd6ba564e" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="42090772-51f3-41a9-bf16-668d565b1fa3" name="CAI这个类中的内容有待研究，暂时给出这么几个" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3914c9b3-e630-47d9-807f-ba0e9ef79287" />
+        <ownedAttributesInternal>
+          <property Id="0781e140-259c-4d62-a41c-b7a509f47f39" name="vector&lt;Node&gt; Tree//完全N叉树，用数组表示" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="353d2a0c-239b-412b-a40e-e18cb5454ece" />
+          </property>
+          <property Id="353203cf-2654-4ae8-939b-5e79fb0b4b5b" name="int Score[15][15]//分数表" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0a1ecec7-6e0d-45b1-b440-34f45048d730" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="52aa1fb0-e59b-40fc-9d76-015db14f9300" name="void GetScore" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="73e42fad-9d8a-4e7f-bac5-3cfbbf05f5ed" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="55a7405a-c549-4f9d-805e-54aed022a21a" name="CBackArray BackArray" direction="In" isUnique="false">
+                  <elementDefinition Id="841e0695-e600-4fe8-b822-5575658f00c0" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="da7313ed-acd5-4459-8b2d-62d10dffccbd" name="int num)//获取分数(" direction="In" isUnique="false">
+                  <elementDefinition Id="53412a7c-7e0d-4ac7-aee3-a99e6cae3034" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="43fa287a-0cb3-4629-9101-7560b89cad1a" name="virtual POINT CreateChess()=0" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="dba6abf0-f726-458c-be2f-d4385a40f9a7" />
+          </operation>
+          <operation Id="de7884a5-2c61-49f6-b624-87727de456c7" name="POINT FindMax" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4abe681c-4f8c-4a45-bbd4-7f4781b41af9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b6053f3c-9b46-453c-8a5b-fd5b72d360c2" name="int score[15]" direction="In" isUnique="false">
+                  <lowerValueInternal>
+                    <literalString Id="60392579-e301-4717-9709-1ff194db38e4" name="Lower" value="15">
+                      <elementDefinition Id="40711df0-4079-4a5b-9972-6bd1a14227a7" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="201c8bed-996a-48b4-9ebd-72673f6cf6e2" name="Upper" value="15">
+                      <elementDefinition Id="a5518610-fe58-49e8-995f-5cc24c8df47f" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="5653be51-e8fe-4b67-9848-40fce05526b1" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="069cefad-1540-4d9c-8e44-ee09a1c73e54" name="CountNumber CountNum" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="53ea702d-3ac6-4bab-9d22-f496b122c8b6" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3233c920-a9e4-4c8a-b565-f33a66d8153c" name="int" direction="In" isUnique="false">
+                  <elementDefinition Id="c96cbaf2-c65a-46e0-adb6-0f443633163f" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="db3dde47-3e62-43fd-8abf-3094402aef85" name="int" direction="In" isUnique="false">
+                  <elementDefinition Id="4fc0ab24-da63-499e-966d-65df6fdfdefe" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="84360f14-9d06-4473-82f2-383dc4de5c23" name="int" direction="In" isUnique="false">
+                  <elementDefinition Id="41d2f14a-58cd-4f8d-94f5-f7fcbda847fd" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4556476e-ea73-4662-96dc-7ff6c6d92570" name="int" direction="In" isUnique="false">
+                  <elementDefinition Id="f57ec3f3-b600-430c-a344-be650b756594" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="90f7f5d2-736a-4881-bca3-e8b0c064d8f3" name="int) 统计五元组黑白棋的个数，算分数表使用(" direction="In" isUnique="false">
+                  <elementDefinition Id="5f8bb2af-623b-45d5-93af-219f8abfcf30" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="df77545a-bd79-48b6-a99b-e537f52e07d9" name="void InitScore" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d42ac6e0-d0c9-4003-8869-07242436a299" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="bf910548-3971-4c77-8e1d-64ca85ad4215" name="CEasy" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5bb4e5e8-3e11-4fe9-acb4-b2c67bfd8d9b" />
+        <generalsInternal>
+          <generalization Id="13ede73f-c146-4aff-9911-ed790a7a8b86" isSubstitutable="false">
+            <classMoniker Id="42090772-51f3-41a9-bf16-668d565b1fa3" LastKnownName="CAI这个类中的内容有待研究，暂时给出这么几个" />
+            <elementDefinition Id="f12633bf-9304-46b8-9244-b6a330925ff5" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="c238f52a-30a3-4083-bfcd-45ec36f3450f" name="virtual POINT CreateChess" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7331ec7e-101a-4580-9b54-815521e15ac9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="50378f19-9637-41a9-8d4f-948a1c056144" name="CBackArray" direction="In" isUnique="false">
+                  <elementDefinition Id="1cbfc5b7-9510-489e-9fdf-6a5664322866" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="36a2865f-019a-4bb7-92d9-a6edb152bc89" name="CHard" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="88d75c1b-b475-42b2-b4fe-4d65a9a43a68" />
+        <generalsInternal>
+          <generalization Id="67135ab4-a143-4cc9-9147-4309e692cc62" isSubstitutable="false">
+            <classMoniker Id="42090772-51f3-41a9-bf16-668d565b1fa3" LastKnownName="CAI这个类中的内容有待研究，暂时给出这么几个" />
+            <elementDefinition Id="8b40f34e-122c-4cd9-b240-907975fbf5f8" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="948d99a6-501b-4ad5-a8f6-d63229e2249e" name="virtual POINT CreateChess" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3720ecec-762e-44bf-ac4a-7415cd0aaefb" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="86d0383b-a830-43dd-9226-d2e5b56b6339" name="CBackArray" direction="In" isUnique="false">
+                  <elementDefinition Id="6329016c-e70c-4c5d-a3c6-54fd9d6993e5" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="cbf3649b-5e86-4977-903a-07a6d8c7059f" name="void CreateTree" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ccacf4a2-e2f5-4f8a-8280-0ce9a5a2af7b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9d6b62b7-76aa-479c-9829-9252e80a7320" name="CBackArray" direction="In" isUnique="false">
+                  <elementDefinition Id="554f8bf8-f57b-4331-9359-975312c0addc" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f11fdc88-389d-4881-b756-2f704003db26" name="CNormal" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="78b62e5f-0053-40e6-8893-e98b67aa4a14" />
+        <generalsInternal>
+          <generalization Id="2f0664dc-1a52-422d-ad51-e8ebd5ab9165" isSubstitutable="false">
+            <classMoniker Id="42090772-51f3-41a9-bf16-668d565b1fa3" LastKnownName="CAI这个类中的内容有待研究，暂时给出这么几个" />
+            <elementDefinition Id="2efa830a-ba67-4c14-805e-047cbde686c5" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="8fc8c959-aa56-4d83-8181-817f81de9677" name="virtual POINT CreateChess" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="dcca005f-aa90-429a-b12d-41b53fb46d13" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="955952b5-c24f-41eb-b522-bb2439f4405b" name="CBackArray" direction="In" isUnique="false">
+                  <elementDefinition Id="7bd5b9f1-36a9-4a3d-b660-27066ab57b8d" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b6eb4b7a-f89a-459a-8a23-9013e264d454" name="void CreateTree" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="02999fd3-496c-46ca-be20-7bdb01a511be" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0600463f-866e-4c6b-8edd-ec9d22e14ab6" name="CBackArray" direction="In" isUnique="false">
+                  <elementDefinition Id="434d3afe-ba6f-478a-8945-f6c048bb3347" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="46bf198b-9576-4c26-99a4-cf2e983a970d" name="struct CountNumber" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ff4dad94-6d25-47b8-883c-f16744f476cc" />
+        <ownedAttributesInternal>
+          <property Id="b1d497e2-7dd5-4caa-a8ba-99819d4a9b65" name="int CountBlack" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f33e08e8-605d-4936-8964-e7744b2b48dc" />
+          </property>
+          <property Id="7c6f3a70-6ef8-42b7-bdbb-702eadc1a749" name="int CountWhite" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1a154daf-b9f1-4bb8-9fff-efb07cb928b7" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="bd542b7b-d964-454b-9a9d-c7627b251583" name="struct Node" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d841211f-bc89-45bd-985e-69e51b72fc49" />
+        <ownedAttributesInternal>
+          <property Id="ead19269-650c-4ea2-b969-01508bdc2d5a" name="CBackArray BackArray" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f7b3c7b1-35c8-47d2-b730-aa8ed81a1cba" />
+          </property>
+          <property Id="ede1a556-7d92-4640-863f-5d922bd06a67" name="int PlayOrComputer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d64fc2d9-7bc0-478d-8a08-b375e5ae5490" />
+          </property>
+          <property Id="76083663-ee50-4987-896e-c50a3ad8956c" name="int Score[15]" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <lowerValueInternal>
+              <literalString Id="dd489aca-96d1-46f8-914e-ba819691f0ac" name="Lower" value="15">
+                <elementDefinition Id="cd0b0bc0-37be-41a6-b5f7-aef43b29ad99" />
+              </literalString>
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString Id="0915000f-0e11-4b10-b29a-f6c82259cfdc" name="Upper" value="15">
+                <elementDefinition Id="76d0bf0f-9ac6-4238-8e46-f7e0d0419724" />
+              </literalString>
+            </upperValueInternal>
+            <elementDefinition Id="0e66b27e-73ac-4d1b-9d73-4b8873beccb9" />
+          </property>
+          <property Id="c6f76571-fb87-4769-9496-5f14e87f1893" name="POINT point" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fcdaaec3-a619-4815-b18a-4eaaa2c4727a" />
+          </property>
+          <property Id="d445cbcf-ed01-4bc3-af39-9fc22cf549cb" name="int Evaluation" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8aaaca2a-c973-4cf2-955b-7834db296221" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="507e99fd-101c-416f-bd2f-96aa3126fe39" name="类图 流程图">
+    <elementDefinition Id="718fdd93-668d-4b23-9806-f9abf25a61e9" />
+    <profileInstances>
+      <packageHasProfileInstances Id="b2ed8e89-363d-4464-895e-1f874f2ff489">
+        <profileInstance Id="61d64c6a-e0f4-4c7b-8cbc-fdb0629f1e12" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="ba6c4875-8ef5-484d-8d3f-75a87ba08e83">
+        <profileInstance Id="f9283fe3-f3fb-4fd3-a8e4-07b02767eadd" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
